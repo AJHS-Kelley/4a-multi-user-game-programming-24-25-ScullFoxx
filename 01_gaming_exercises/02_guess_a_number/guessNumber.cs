@@ -4,16 +4,25 @@ using System;
 class GuessNumber {
     static void Main() {
         int numGuess = 0;
-        int maxGuess = 4;
+        int maxGuess;
+        int minimumNum;
+        int maxNum;
         int guess;
         // Generate the secret number
         Random rnd = new Random(); // Create an object named 'rnd' that is a copy of the Random() class.
-        int secretNum = rnd.Next(101); // Generate from 0 to 99
+        Console.WriteLine("Welcome to number guess! You just guess a number\n");
+        Console.WriteLine("How many guesses would you like for this game?\n");
+        maxGuess = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("What would you like your MINIMUM number to guess to be?");
+        minimumNum = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("What would you like your MAXIMUM number to guess to be? (MAKE SURE TO ADD 1 TO WHATEVER YOU WANT!)\n");
+        maxNum = Convert.ToInt32(Console.ReadLine());
+        int secretNum = rnd.Next(minimumNum, maxNum); // Generate from 0 to 99
         // Console.WriteLine(secretNum);
         // int secretNum = rnd.Next(25, 1000); // Generate from 25 to 999
         while (numGuess < maxGuess) {
         
-            Console.WriteLine("Pick a number 0 through 100.");
+            Console.WriteLine("Pick a number " + minimumNum + " through " + maxNum);
             guess = Convert.ToInt32(Console.ReadLine());
             numGuess++;
             if (guess > secretNum)
@@ -32,7 +41,7 @@ class GuessNumber {
             
             if (numGuess >= maxGuess)
             {
-                Console.WriteLine("You've run out of guesses. Try again!");
+                Console.WriteLine("You've run out of guesses. The Secret number was " + secretNum + ". Try again!");
                 break;
             }
         }
