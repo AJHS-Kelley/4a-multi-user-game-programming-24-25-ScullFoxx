@@ -1,4 +1,4 @@
-// Guess a Number, Sculley, Alexandra, v0.2
+// Guess a Number, Sculley, Alexandra, v1.0
 
 using System;
 class GuessNumber {
@@ -15,15 +15,25 @@ class GuessNumber {
         
             Console.WriteLine("Pick a number 0 through 100.");
             guess = Convert.ToInt32(Console.ReadLine());
-            if (guess == secretNum)
+            numGuess++;
+            if (guess > secretNum)
             {
-                Console.WriteLine("Congrats! You guessed the secret number! The number was: " + secretNum);
+                Console.WriteLine("Your guess is too high!");
+            }
+            else if (guess < secretNum)
+            {
+                Console.WriteLine("Your guess is too low!");
+            }
+            else
+            {
+                Console.WriteLine("Congrats! You guess the secret number!");
                 break;
             }
-            else if (guess != secretNum)
+            
+            if (numGuess >= maxGuess)
             {
-                Console.WriteLine("That's not it! You did not guess the secret number.");
-                numGuess++;
+                Console.WriteLine("You've run out of guesses. Try again!");
+                break;
             }
         }
         // while loop
