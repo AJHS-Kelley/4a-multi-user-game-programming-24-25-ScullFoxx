@@ -49,8 +49,8 @@ class RPS {
         // Gameplay
         while (loopCount < loopReqs)
         {
-            Console.WriteLine("Burrito");
-            cpuRand = rnd.Next(0, 2);
+            //Console.WriteLine("Burrito");
+            cpuRand = rnd.Next(0, 3);
             // Console.WriteLine("PLease pick option rock, paper, or scissors.\n");
             if (cpuRand == 0)
             {
@@ -68,7 +68,7 @@ class RPS {
                 //Console.WriteLine("Player has selected scissors.\n");
             }
             
-            cpuRand = rnd.Next(0, 2);
+            cpuRand = rnd.Next(0, 3);
             //Console.WriteLine("Feesh is choosing...\n");
             if (cpuRand == 0)
             {
@@ -121,7 +121,7 @@ class RPS {
                 //Console.WriteLine("Uhh.. Player has point :(.\n");
                 playerScore++;
             }
-            Console.WriteLine("Chicken Sandwich");
+            //Console.WriteLine("Chicken Sandwich");
             /*if (cpuScore >= 5)
             {
                 Console.WriteLine("Feesh wins L :)\n");
@@ -132,12 +132,13 @@ class RPS {
                 Console.WriteLine($"Oh noes {playerName} wins :(");
                 break;
             */
-        }
-        loopCount++;
 
-        Console.WriteLine(playerScore);
-        Console.WriteLine(cpuScore);
-        Console.WriteLine(numDraws);
+            loopCount++;
+        }
+
+        Console.WriteLine("Player Score: " + playerScore);
+        Console.WriteLine("CPU Score: " + cpuScore);
+        Console.WriteLine("Draws : " + numDraws);
     }
 
 
