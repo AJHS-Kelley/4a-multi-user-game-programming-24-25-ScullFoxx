@@ -49,78 +49,79 @@ class RPS {
         // Gameplay
         while (loopCount < loopReqs)
         {
+            Console.WriteLine("Burrito");
             cpuRand = rnd.Next(0, 2);
             // Console.WriteLine("PLease pick option rock, paper, or scissors.\n");
             if (cpuRand == 0)
             {
                 playerChoice = "rock";
-                Console.WriteLine("Player has selected rock.\n");
+                //Console.WriteLine("Player has selected rock.\n");
             }
             else if (cpuRand == 1)
             {
                 playerChoice = "paper";
-                Console.WriteLine("Player has selected paper.\n");
+                //Console.WriteLine("Player has selected paper.\n");
             }
             else if (cpuRand == 2)
             {
                 playerChoice = "scissors";
-                Console.WriteLine("Player has selected scissors.\n");
+                //Console.WriteLine("Player has selected scissors.\n");
             }
             
             cpuRand = rnd.Next(0, 2);
-            Console.WriteLine("Feesh is choosing...\n");
+            //Console.WriteLine("Feesh is choosing...\n");
             if (cpuRand == 0)
             {
                 cpuChoice = "rock";
-                Console.WriteLine("Feesh has rock!\n");
+                //Console.WriteLine("Feesh has rock!\n");
             }
             else if (cpuRand == 1)
             {
                 cpuChoice = "paper";
-                Console.WriteLine("Feesh has paper!\n");
+                //Console.WriteLine("Feesh has paper!\n");
             }
             else if (cpuRand == 2)
             {
                 cpuChoice = "scissors";
-                Console.WriteLine("Feesh has scissor!\n");
+                //Console.WriteLine("Feesh has scissor!\n");
             }
 
             if (cpuChoice == playerChoice)
             {
-                Console.WriteLine("Oops, Tie! Nobody points.\n");
+                //Console.WriteLine("Oops, Tie! Nobody points.\n");
                 numDraws++;
             }
             else if (cpuChoice == "rock" && playerChoice == "scissors")
             {
-                Console.WriteLine("Feesh has scored point!\n");
+                //Console.WriteLine("Feesh has scored point!\n");
                 cpuScore++;
             }
             else if (cpuChoice == "scissors" && playerChoice == "paper")
             {
-                Console.WriteLine("Feesh has score point!\n");
+                //Console.WriteLine("Feesh has score point!\n");
                 cpuScore++;
             }
             else if (cpuChoice == "paper" && playerChoice == "rock")
             {
-                Console.WriteLine("Feesh has score point!\n");
+                //Console.WriteLine("Feesh has score point!\n");
                 cpuScore++;
             }
             else if (playerChoice == "scissors" && cpuChoice == "paper")
             {
-                Console.WriteLine($"Uhh.. {playerName} has point :(.\n");
+                //Console.WriteLine("Uhh.. Player has point :(.\n");
                 playerScore++;
             }
             else if (playerChoice == "paper" && cpuChoice == "rock")
             {
-                Console.WriteLine($"Uhh.. {playerName} has point :(.\n");
+                //Console.WriteLine("Uhh.. Player has point :(.\n");
                 playerScore++;
             }
             else if (playerChoice == "rock" && cpuChoice == "scissors")
             {
-                Console.WriteLine($"Uhh.. {playerName} has point :(.\n");
+                //Console.WriteLine("Uhh.. Player has point :(.\n");
                 playerScore++;
             }
-
+            Console.WriteLine("Chicken Sandwich");
             /*if (cpuScore >= 5)
             {
                 Console.WriteLine("Feesh wins L :)\n");
@@ -130,15 +131,15 @@ class RPS {
             {
                 Console.WriteLine($"Oh noes {playerName} wins :(");
                 break;
-            */}
-            loopCount++;
-
+            */
         }
+        loopCount++;
 
         Console.WriteLine(playerScore);
         Console.WriteLine(cpuScore);
         Console.WriteLine(numDraws);
-
-
     }
+
+
+
 }
