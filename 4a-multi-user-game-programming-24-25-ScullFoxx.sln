@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_gaming_exercises", "01_gaming_exercises", "{CB6F98C3-6920-4B5C-A5A3-C0A981DA76B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPS", "01_gaming_exercises\RPS\RPS.csproj", "{E89019CD-784F-492B-8218-58E0B0EF8927}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E89019CD-784F-492B-8218-58E0B0EF8927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E89019CD-784F-492B-8218-58E0B0EF8927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E89019CD-784F-492B-8218-58E0B0EF8927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E89019CD-784F-492B-8218-58E0B0EF8927}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E89019CD-784F-492B-8218-58E0B0EF8927} = {CB6F98C3-6920-4B5C-A5A3-C0A981DA76B6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {998D2AEC-D6B8-4EDB-A0CE-74ED1F04E8BF}
+	EndGlobalSection
+EndGlobal
